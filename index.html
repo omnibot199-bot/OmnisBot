@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#e9eaff" />
+  <meta name="description" content="OMNI BOT — Your AI. Your Command. Coming soon." />
+  <title>OMNI BOT — Coming Soon</title>
+  <style>
+    :root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:#1d164d; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; min-height:100%; }
+    body { min-height:100svh; background:#edf0ff url('./background.png') center center / cover no-repeat fixed; }
+    body::before { content:""; position:fixed; inset:0; background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.08) 45%,rgba(234,232,255,.20)); pointer-events:none; }
+    main { position:relative; min-height:100svh; display:flex; align-items:center; justify-content:center; padding:32px 18px; }
+    .panel { width:min(100%, 560px); padding:clamp(25px,5vw,45px); text-align:center; background:rgba(255,255,255,.52); border:1px solid rgba(255,255,255,.76); border-radius:30px; box-shadow:0 18px 70px rgba(69,49,139,.13); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
+    .eyebrow { font-size:11px; font-weight:800; letter-spacing:.33em; color:#6e5bb1; margin:0 0 12px; }
+    h1 { font-size:clamp(38px,8vw,64px); letter-spacing:-.055em; line-height:1; margin:0; font-weight:900; color:#24145e; }
+    .subtitle { margin:14px 0 30px; font-size:14px; font-weight:600; color:#64568b; letter-spacing:.055em; }
+    .ca-label { display:block; margin-bottom:10px; text-align:left; font-size:11px; font-weight:800; letter-spacing:.18em; color:#6d5b9d; }
+    .ca-box { display:flex; align-items:center; gap:9px; border-radius:15px; background:rgba(255,255,255,.78); border:1px solid rgba(127,108,200,.25); padding:10px 11px 10px 16px; min-height:57px; }
+    .ca-box span { flex:1; min-width:0; text-align:left; font-size:14px; color:#8a80a7; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .copy { border:0; border-radius:10px; padding:10px 13px; color:#fff; font-weight:800; background:linear-gradient(135deg,#8063ef,#ae5ee6); cursor:pointer; }
+    .copy:disabled { opacity:.45; cursor:not-allowed; }
+    .socials { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:16px; }
+    .social { min-height:74px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; border:1px solid rgba(129,107,205,.22); border-radius:15px; background:rgba(255,255,255,.75); color:#302269; text-decoration:none; font-size:11px; font-weight:800; transition:transform .2s,background .2s; }
+    a.social:hover { transform:translateY(-3px); background:white; }
+    .social svg { width:24px; height:24px; fill:currentColor; }
+    .social.disabled { opacity:.58; cursor:default; }
+    .footer { font-size:11px; color:#71668f; margin:24px 0 0; }
+    @media(max-width:600px) { body { background-attachment:scroll; background-position:center center; } main { padding:18px; } .panel { border-radius:24px; padding:28px 19px; } .socials { gap:7px; } .social { min-height:68px; font-size:10px; } .subtitle { margin-bottom:25px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel" aria-label="OMNI BOT coming soon">
+      <p class="eyebrow">OMNI BOT</p>
+      <h1>COMING SOON</h1>
+      <p class="subtitle">YOUR AI. YOUR COMMAND.</p>
+      <label class="ca-label" for="contract-address">CONTRACT ADDRESS</label>
+      <div class="ca-box">
+        <span id="contract-address">CA will be announced soon</span>
+        <button class="copy" type="button" disabled title="Contract address not announced yet">COPY</button>
+      </div>
+      <nav class="socials" aria-label="Community links">
+        <a class="social" href="https://x.com/TryOmniBot_" target="_blank" rel="noopener noreferrer" title="Follow OMNI BOT on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-7.5L5.4 22H2.3l7.3-8.5L1.8 2h6.5l4.4 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/></svg><span>X</span></a>
+        <span class="social disabled" title="Telegram link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.2 2.8 10.4c-1.3.5-1.3 1.3-.2 1.6l4.8 1.5 1.8 5.7c.2.6.1.9.8.9.5 0 .8-.2 1.1-.5l2.7-2.6 5.6 4.1c1 .5 1.7.2 1.9-.9L24 4.7c.3-1.4-.5-2-1.5-1.5ZM8.2 13.2 19 6.4c.5-.3 1-.1.6.3l-8.9 8.1-.4 3.7-2.1-5.3Z"/></svg><span>Telegram</span></span>
+        <span class="social disabled" title="Farcaster link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16v18h-4v-7c0-2-1-3-4-3s-4 1-4 3v7H4V3Zm4 3v4c1-1 2.3-1.5 4-1.5s3 .5 4 1.5V6H8Z"/></svg><span>Farcaster</span></span>
+        <span class="social disabled" title="GitHub link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.4-1.3-5.4-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-3 0 0 1-.3 3.1 1.1a10.6 10.6 0 0 1 5.7 0C16.5 5 17.5 5.3 17.5 5.3c.6 1.6.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.3-2.8 5.3-5.4 5.6.5.4.9 1.1.9 2.2V22c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z"/></svg><span>GitHub</span></span>
+      </nav>
+      <p class="footer">A new way to explore Web3 is taking shape.</p>
+    </section>
+  </main>
+</body>
+</html>
